@@ -3,7 +3,6 @@
 #include <cstring>
 #include <cstddef>
 #include<stdio.h>
-#include <windows.h>
 #include<algorithm>
 #include <fstream>
 using namespace std;
@@ -21,10 +20,11 @@ void clrscr()
     for(int i=0;i<100;i++)
         cout<<"\n";
 }
-void plot(float dat[100],int len)
+/*void plot(float dat[100],int len)
 {
 ShellExecute(NULL, "open", "file:///C:/Users/sidda/Desktop/ugandan.html",NULL, NULL, SW_SHOWNORMAL);
 }
+*/
 void shortterm()
 {
 float p[3];
@@ -131,7 +131,6 @@ void SD(float data[],int k)
 
 
 }
-
 
 void predict()
 {
