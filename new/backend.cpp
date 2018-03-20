@@ -88,25 +88,11 @@ class database
         trim();
         fwrite();
     }
-    friend void shortsort(database[]);
-    friend bool longsort(database[]);
 };
-void shortsort(database currencies[])
-{
-    for(int i=0;i<SIZE;i++)
-        for(int j=0;j<SIZE-i-1;j++)
-            if(currencies[j].shortterm>currencies[j+1].shortterm)
-            {
-                database temp=currencies[j];
-                currencies[j]=currencies[j+1];
-                currencies[j+1]=temp;
-            }
-            
-}    
+    
 int main()
 {
   database currencies[]={database("lite.txt"),database("bit.txt"),database("doge.txt")};
-  cout<<currencies[0].file<<endl<<currencies[1].file<<endl<<currencies[2].file<<endl;
   cout<<"shortterm best investments in decreasing orderof preference : ";
     for(int i=0;i<SIZE;i++)
         for(int j=0;j<SIZE-i-1;j++)
